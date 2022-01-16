@@ -6,8 +6,8 @@ when uploading homebrew games to services like Itch.io.
 This version makes the following changes.
 
 - Fixes undefined `customControls` error
-- Mostly uses `let` instead of `var`
-- Formats code
+- Sets game title from `___PROJECT_NAME___`
+- Mostly uses modern `let` instead of `var` for improving scope
 - Adds helpful text in HTML
 - Canvas fills browser window on desktop/tablet while keeping aspect ratio
 - Touch controls displayed on mobile/tablet
