@@ -518,7 +518,7 @@ let swfobject = (function () {
 		I[I.length] = [Z, X, Y];
 	}
 	function F(Z) {
-		let Y = M.pv,
+		var Y = M.pv,
 			X = Z.split(".");
 		X[0] = parseInt(X[0], 10);
 		X[1] = parseInt(X[1], 10) || 0;
