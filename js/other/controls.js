@@ -38,7 +38,7 @@ let dpad = document.getElementById("controller_dpad");
 // HTML Gamepad API support
 // Poll for gamepad input about ~4 times per gameboy frame (~240 times second)
 const GAMEPAD_POLLING_INTERVAL = 1000 / 60 / 4;
-const GAMEPAD_KEYMAP_STANDARD_STR = "standard"
+const GAMEPAD_KEYMAP_STANDARD_STR = "standard";
 
 // When gamepad.mapping reports "standard"
 const GAMEPAD_KEYMAP_STANDARD = [
@@ -167,7 +167,7 @@ function bindTouchRestore() {
   window.addEventListener("touchstart", function (e) {
     controller.style.display = "block";
     isTouchEnabled = true;
-  })
+  });
 }
 
 function bindKeyboard() {
@@ -210,7 +210,7 @@ function bindKeyboard() {
 function bindClick() {
   window.addEventListener("click", function (e) {
     initSound();
-  })
+  });
 }
 
 if (isTouchEnabled) {

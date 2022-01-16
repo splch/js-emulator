@@ -2,7 +2,6 @@ let romPath = "rom/game.gb";
 let mainCanvas = null;
 let soundReady = false;
 
-let cout = console.log.bind(console);
 function startGame(blob) {
   let binaryHandle = new FileReader();
   binaryHandle.onload = function () {
@@ -28,7 +27,7 @@ function loadViaXHR() {
 }
 
 function windowingInitialize() {
-  cout("windowingInitialize() called.", 0);
+  console.info("windowingInitialize() called.", 0);
   mainCanvas = document.getElementById("mainCanvas");
   window.onunload = autoSave;
   loadViaXHR();

@@ -43,7 +43,7 @@ self.onprocessmedia = function (event) {
 	}
 	//De-interleave the buffered audio while looping through our ring buffer:
 	let sampleFramesCount = Math.min(apiBufferLength, XAudioJSResampledSamplesLeft() / XAudioJSChannelsAllocated);
-	for (let sampleFramePosition = 0, channelOffset = 0; sampleFramePosition < sampleFramesCount; ++sampleFramePosition) {
+	for (var sampleFramePosition = 0, channelOffset = 0; sampleFramePosition < sampleFramesCount; ++sampleFramePosition) {
 		for (channelOffset = sampleFramePosition; channelOffset < apiBufferLengthAll; channelOffset += apiBufferLength) {
 			XAudioJSOutputBuffer[channelOffset] = XAudioJSResampledBuffer[XAudioJSResampleBufferStart++];
 			if (XAudioJSResampleBufferStart == XAudioJSResampleBufferSize) {
