@@ -21,6 +21,7 @@ This version makes the following changes.
 
 - Clone this repository
 - Add your ROM file as `rom/game.gb` (or edit romPath in js/other/mobile.js to point to your ROM file)
+- If you're running this as a webapp, update the `images/128.png` file
 - Upload to a webserver and visit index.html
 
 ## Keyboard Controls

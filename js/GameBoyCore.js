@@ -71,7 +71,7 @@ function GameBoyCore(canvas, ROMImage) {
 	this.ROMBank1offs = 0;						//Offset of the ROM bank switching.
 	this.currentROMBank = 0;					//The parsed current ROM bank selection.
 	this.cartridgeType = 0;						//Cartridge Type
-	this.name = "";								//Name of the game
+	this.name = document.title;								//Name of the game
 	this.gameCode = "";							//Game code (Suffix for older games)
 	this.fromSaveState = false;					//A boolean to see if this was loaded in as a save state.
 	this.savedStateFileName = "";				//When loaded in as a save state, this will not be empty.
