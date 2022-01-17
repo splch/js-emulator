@@ -104,7 +104,7 @@ let soundInitTimer = setInterval(function () {
     }
   }
   catch (err) {
-    console.error(err);
+    console.warn(err);
   }
 }, 16);
 
