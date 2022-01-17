@@ -97,14 +97,9 @@ function initSound() {
 }
 
 let soundInitTimer = setInterval(function () {
-  try {
-    if (GameBoyEmulatorInitialized()) {
-      initSound();
-      clearTimeout(soundInitTimer);
-    }
-  }
-  catch (err) {
-    console.warn(err);
+  if (typeof GameBoyEmulatorInitialized === "function") {
+    initSound();
+    clearTimeout(soundInitTimer);
   }
 }, 16);
 
